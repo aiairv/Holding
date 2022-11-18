@@ -19,7 +19,6 @@ public class CompanyMenu {
         company1.addEmployee(employee3);
 
         Company company2 = new Company("FormulaTechnology", 750000, "Jay Park");
-
         Employee employee6 = new Employee("Filiph Tikhonov", 30000, "FinanceDirector");
         Employee employee7 = new Employee("Erik Vasilev", 25000, "ProjectManager");
         Employee employee8 = new Employee("Vladimir Filatov", 20000, "ProjectManager");
@@ -27,7 +26,6 @@ public class CompanyMenu {
         company2.addEmployee(employee7);
 
         Company company3 = new Company("YEntertainment", 650000, "Nancy Smith");
-
         Employee employee9 = new Employee("Griffin Lewis", 28000, "FinanceDirector");
         Employee employee10 = new Employee("Thomas McDowel", 30000, "ProjectManager");
         Employee employee11 = new Employee("Ruth Banks", 15000, "Supervisor");
@@ -51,7 +49,7 @@ public class CompanyMenu {
             int command = in.nextInt();
             if (command == 1) {
 //                MainMenu.main(holding.getCompanyByName());
-                company1.getEmployeeByName();
+                holding.getCompanyByName();
 //                Реализуйте вывод информации об этой компании (кроме списка сотрудников)
             } else if (command == 2) {
                 company1.showEmployees();
@@ -62,13 +60,8 @@ public class CompanyMenu {
             } else if (command == 4) {
                 //Реализуйте добавление компании в холдинг
                 System.out.println("....................");
-                company1.addEmployee(employee1);
-                company1.addEmployee(employee2);
-                company1.addEmployee(employee3);
                 company1.addEmployee(employee4);
                 company1.addEmployee(employee5);
-                company2.addEmployee(employee6);
-                company2.addEmployee(employee7);
                 company2.addEmployee(employee8);
                 company3.addEmployee(employee9);
                 company3.addEmployee(employee10);

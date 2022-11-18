@@ -48,18 +48,6 @@ public class Company {
     public void setGeneralDirector(String headOfTheCompany) {
         this.generalDirector = generalDirector;
     }
-
-    //    public void getEmployeeInformation() {
-//        Employee[] employees = this.employees;
-//        for (int i = 0; i < employees.length; i++) {
-////            MainMenu.main("JoyEnt");
-//            if (holding.getCompanyByName() != null) {
-//                System.out.println(employees[i]);
-//
-//            }
-//
-//        }
-//    }
     public void showEmployees() {
         Employee[] employees = this.employees;
         System.out.println("Список сотрудников:");

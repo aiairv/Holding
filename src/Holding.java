@@ -48,22 +48,7 @@ public class Holding {
         }
     }
     //Реализуйте поиск компании по наименованию
-    public Company getCompanyByName() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("Введите название компании для поиска:");
-        String companyName = scanner.nextLine();
-            for (int i = 0; i < companies.length; i++) {
-                if (companies[i] != null) {
-                    if (companies[i].getName().equals(companyName)) {
-                        System.out.println("Информация о компании: ");
-                        System.out.println(companies[i].getName() + " | " +  companies[i].getBudget() + " | " + companies[i].getGeneralDirector());
-                }
 
-            }
-
-        }
-        return null;
-    }
     public void calculateTotalBudget() {
             Company[] companies = this.companies;
             double count = 0;
@@ -72,7 +57,22 @@ public class Holding {
                     count = count + companies[i].getBudget();
             }
             System.out.println("Бюджет Холдинга составляет: " + count + " $");
-       }
+       } public Company getCompanyByName() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите название компании для поиска:");
+        String companyName = scanner.nextLine();
+        for (int i = 0; i < companies.length; i++) {
+            if (companies[i] != null) {
+                if (companies[i].equals(companyName)) {
+                    System.out.println("Информация о компании: ");
+                    System.out.println(companies[i].getName() + " | " +  companies[i].getBudget() + " | " + companies[i].getGeneralDirector());
+                }
+
+            }
+
+        }
+        return null;
+    }
 }
 
 
