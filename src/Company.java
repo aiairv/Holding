@@ -2,14 +2,18 @@ import java.util.Scanner;
 
 public class Company {
     private String name;
-    private Employee[] employees = new Employee[25];
+    private int numberOfWorkPositions;
+    private Employee[] employees = new Employee[20];
     //Нужно добавить:
     //Бюджет холдинга
     //Руководителя компании
     private int budget;
-    private Holding holding;
     private String generalDirector;
+
 //    private String foundName = MainMenu.get;
+
+    public Company() {
+    }
 
     public Company(String name, int budget, String generalDirector) {
         this.name = name;
@@ -58,6 +62,7 @@ public class Company {
         }
     }
 
+
     public boolean addEmployee(Employee employee) {
         for (int i = 0; i < employees.length; i++) {
             if (employees[i] == null) {
@@ -105,9 +110,9 @@ public class Company {
         Scanner in = new Scanner(System.in);
         System.out.println("Введите имя сотрудника: ");
         String employeeName = in.nextLine();
-        for (int i = 1; i < employees.length; i++) {
+        for (int i = 0; i < employees.length; i++) {
             if (employees[i] != null) {
-                if (employees[i].equals(employeeName)) {
+                if (employees[i].getName().equals(employeeName)) {
                     System.out.println(employees[i].getName() + " | " +
                             employees[i].getSalary() + " | " + employees[i].getPosition());
 

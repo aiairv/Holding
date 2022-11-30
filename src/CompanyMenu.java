@@ -6,8 +6,15 @@ public class CompanyMenu {
 
         Holding holding = new Holding();
 
-
         Company company1 = new Company("XTechnology", 1000000, "Harry Potter");
+        Company company2 = new Company("FormulaTechnology", 750000, "Jay Park");
+        Company company3 = new Company("YEntertainment", 650000, "Nancy Smith");
+        Company company4 = new Company("JoyEnt", 500000, "Joy Ret");
+        Company company5 = new Company("Netflix", 500000, "Eleven");
+
+        holding.addCompany(company1);
+        holding.addCompany(company2);
+        holding.addCompany(company3);
 
         Employee employee1 = new Employee("Joice Byers", 50000, "FinanceDirector");
         Employee employee2 = new Employee("Jim Hooper", 32000, "SalesManager");
@@ -18,19 +25,19 @@ public class CompanyMenu {
         company1.addEmployee(employee2);
         company1.addEmployee(employee3);
 
-        Company company2 = new Company("FormulaTechnology", 750000, "Jay Park");
+
         Employee employee6 = new Employee("Filiph Tikhonov", 30000, "FinanceDirector");
         Employee employee7 = new Employee("Erik Vasilev", 25000, "ProjectManager");
         Employee employee8 = new Employee("Vladimir Filatov", 20000, "ProjectManager");
         company2.addEmployee(employee6);
         company2.addEmployee(employee7);
 
-        Company company3 = new Company("YEntertainment", 650000, "Nancy Smith");
+
         Employee employee9 = new Employee("Griffin Lewis", 28000, "FinanceDirector");
         Employee employee10 = new Employee("Thomas McDowel", 30000, "ProjectManager");
         Employee employee11 = new Employee("Ruth Banks", 15000, "Supervisor");
 
-        Company company4 = new Company("JoyEnt", 500000, "Joy Ret");
+
         Employee employee12 = new Employee("Aylin Hill", 35000, "FinanceDirector");
         Employee employee13 = new Employee("Wendy Stewart", 35000, "ProjectManager");
 

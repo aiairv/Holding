@@ -7,6 +7,9 @@
         private int salary;
         private String position;
 
+        public Employee() {
+        }
+
         public Employee(String name, int salary, String position) {
             this.name = name;
             this.salary = salary;
@@ -31,7 +34,5 @@
         public void setPosition(String position){
             this.position = position;
         }
-        public void getEmployeeInformation(){
+                }
 
-        }
-    }
